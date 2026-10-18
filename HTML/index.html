@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لُبسي | متجر الملابس</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h1 class="logo">لُبسي<span>.</span></h1>
+
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#products">المنتجات</a>
+            <a href="#about">عن المتجر</a>
+        </nav>
+
+        <button id="cartButton" class="cart-button">
+            🛒 السلة (<span id="cartCount">0</span>)
+        </button>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="small-title">ستايلك يبدأ من هنا</p>
+            <h2>خلي إطلالتك<br>تحكي عنك!</h2>
+            <p>اكتشفي أحدث الملابس بأسعار تناسبك.</p>
+            <a href="#products" class="shop-button">تسوقي الآن</a>
+        </div>
+    </section>
+
+    <main class="products-section" id="products">
+        <h2>منتجاتنا</h2>
+        <p class="subtitle">اختاري القطع اللي تناسب ستايلك</p>
+
+        <div class="products-grid">
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80" alt="تيشيرت أبيض">
+                <div class="product-info">
+                    <h3>تيشيرت كلاسيك</h3>
+                    <p>تيشيرت قطني مريح</p>
+                    <div class="product-bottom">
+                        <span class="price">250 جنيه</span>
+                        <button class="add-button"
+                            data-name="تيشيرت كلاسيك" data-price="250">
+                            أضف للسلة +
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=600&q=80" alt="بنطلون جينز">
+                <div class="product-info">
+                    <h3>بنطلون جينز</h3>
+                    <p>تصميم عملي وأنيق</p>
+                    <div class="product-bottom">
+                        <span class="price">450 جنيه</span>
+                        <button class="add-button"
+                            data-name="بنطلون جينز" data-price="450">
+                            أضف للسلة +
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=600&q=80" alt="جاكيت أنيق">
+                <div class="product-info">
+                    <h3>جاكيت أنيق</h3>
+                    <p>إطلالة مميزة لكل يوم</p>
+                    <div class="product-bottom">
+                        <span class="price">650 جنيه</span>
+                        <button class="add-button"
+                            data-name="جاكيت أنيق" data-price="650">
+                            أضف للسلة +
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <section class="cart-section" id="cart">
+        <h2>🛒 سلة المشتريات</h2>
+        <div id="cartItems">
+            <p>السلة فارغة، اختاري منتجاتك الأول!</p>
+        </div>
+
+        <h3>الإجمالي: <span id="totalPrice">0</span> جنيه</h3>
+
+        <button id="clearCart" class="clear-button">
+            إفراغ السلة
+        </button>
+    </section>
+
+    <footer id="about">
+        <h3>لُبسي.</h3>
+        <p>اختاري ستايلك وعبّري عن نفسك ❤️</p>
+        <p>جميع الحقوق محفوظة © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
